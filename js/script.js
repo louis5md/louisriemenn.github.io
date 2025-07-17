@@ -45,7 +45,7 @@ if (projectsContainer) {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - projectsContainer.offsetLeft;
-        const walk = (x - startX);
+        const walk = (x - startX) * 1.5; // Increase sensitivity by factor 1.5
         projectsContainer.scrollLeft = scrollLeftPos - walk;
     });
 }
