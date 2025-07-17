@@ -20,21 +20,22 @@ body {
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 section {
-  height: 100vh;
-  scroll-snap-align: start;
+  min-height: 100vh;
   position: relative;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4rem;
 }
 
 .project-card {
